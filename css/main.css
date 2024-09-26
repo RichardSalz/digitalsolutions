@@ -1,3 +1,28 @@
 body {
   background-color: darkgray;
+}
+
+section {
+  border: 1px black solid;
+}
+
+article {
+  border: 1px black dotted;
+}
+
+.tierbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.tierbox > div {
+  margin: 10px;
+  width: 25%;
+}
+
+.cv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px black solid;
 }/*# sourceMappingURL=main.css.map */
