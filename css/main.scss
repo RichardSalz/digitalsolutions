@@ -3,11 +3,11 @@ body {
 }
 
 section {
-    border: 1px black solid;
+    
 }
 
 article {
-    border: 1px black dotted;
+    
 }
 
 .tierbox {
@@ -18,11 +18,13 @@ article {
 .tierbox > div {
     margin: 10px;
     width: 25%;
+    
 }
 
 .cv { 
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px black solid;
+    
 }
+
