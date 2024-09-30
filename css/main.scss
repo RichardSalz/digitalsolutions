@@ -134,13 +134,28 @@ article {
 
 .aboutcompany {
     margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutcompany > div {
+    width: $desktop-standard-width;
+    text-align: center;
+    
 }
 
 .cv { 
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     margin: 10px;
     background-color: $bg-color-secondary;
+}
+
+.cv > div {
+    width: 50%;
+    text-align: center;
+    min-height: 140px;
 }
 

@@ -111,12 +111,26 @@ h1, h2, h3, h4 {
 
 .aboutcompany {
   margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutcompany > div {
+  width: 60%;
+  text-align: center;
 }
 
 .cv {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   margin: 10px;
   background-color: rgb(226, 224, 224);
+}
+
+.cv > div {
+  width: 50%;
+  text-align: center;
+  min-height: 140px;
 }/*# sourceMappingURL=main.css.map */
