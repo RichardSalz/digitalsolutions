@@ -1,5 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  background-color: darkgray;
+  background-color: rgb(247, 247, 247);
+  font-family: "Fraunces", serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 10vh;
+}
+
+.navitem {
+  align-self: baseline;
+  display: flex;
+  justify-content: center;
+}
+
+.startitem {
+  display: flex;
+  flex-direction: row;
+}
+
+.startitem > div {
+  margin-right: 20px;
+}
+
+.middleitem {
+  width: 60%;
+}
+
+.enditem {
+  width: 20%;
+}
+
+@media screen and (max-width: 600px) {
+  .navitem {
+    display: none;
+  }
+  .middleitem {
+    display: flex;
+    text-align: center;
+  }
+}
+.jumbo {
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  height: 90vh;
+  background-image: linear-gradient(to bottom, rgba(46, 51, 65, 0.4), rgba(46, 51, 65, 0.5)), url(../assets/images/laptop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbo > article {
+  padding: 20px;
+}
+
+.onboarding {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.onboarding > div {
+  width: 60%;
+  text-align: center;
+}
+
+.onetime, .contract {
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(226, 224, 224);
+  padding: 10px;
 }
 
 .tierbox {
@@ -12,8 +96,14 @@ body {
   width: 25%;
 }
 
+.aboutcompany {
+  margin: 10px;
+}
+
 .cv {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 10px;
+  background-color: rgb(226, 224, 224);
 }/*# sourceMappingURL=main.css.map */
