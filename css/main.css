@@ -128,13 +128,36 @@ h1, h2, h3, h4, .nav {
 .tierbox {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .tierbox > div {
   margin: 10px;
   width: 25%;
+  border-radius: 10px;
+  background-color: #444B53;
+  color: white;
+  padding: 15px;
 }
 
+@media screen and (max-width: 880px) {
+  .tierbox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tierbox > div {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tierbox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tierbox > div {
+    width: 85%;
+  }
+}
 .aboutcompany {
   margin: 10px;
   margin-bottom: 50px;
@@ -184,6 +207,19 @@ h1, h2, h3, h4, .nav {
   min-height: 140px;
 }
 
+@media screen and (max-width: 880px) {
+  .cv {
+    flex-direction: column;
+  }
+  .cv > div {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cv > div {
+    width: 90%;
+  }
+}
 .e {
   height: 400px;
   width: 400px;

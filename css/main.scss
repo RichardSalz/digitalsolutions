@@ -172,18 +172,47 @@ article {
     padding: 10px;
 }
 
-
+//TIERS
 
 .tierbox {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .tierbox > div {
     margin: 10px;
     width: 25%;
+    border-radius: 10px;
+    background-color: $bg-color-dark;
+    color: $font-color-secondary;
+    padding: 15px;
     
 }
+
+//TIERS MOBILE
+
+@media screen and (max-width: 880px){
+    .tierbox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tierbox > div {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .tierbox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tierbox > div {
+        width: 85%;
+    }
+}
+
+//ABOUT
 
 .aboutcompany {
     margin: 10px;
@@ -227,7 +256,7 @@ article {
     }
 }
 
-//ABOUT
+//CV
 
 .cv { 
     display: flex;
@@ -244,6 +273,27 @@ article {
     text-align: center;
     min-height: 140px;
 }
+
+//CV MOBILE
+
+
+@media screen and (max-width: 880px){
+    
+    .cv { 
+        flex-direction: column;
+    }
+    .cv > div {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+    .cv > div { 
+        width: 90%;
+    }
+}
+
 
 .e {
     height: $desktop-profile-size;
