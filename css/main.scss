@@ -12,6 +12,10 @@ $desktop-standard-width: 55%;
 $tablet-standard-width: 75%;
 $mobile-standard-width: 95%;
 
+$desktop-profile-size: 400px;
+$tablet-profile-size: 300px;
+$mobile-profile-size: 200px;
+
 //GENERAL
 
 html {
@@ -231,6 +235,7 @@ article {
     align-items: center;
     justify-content: space-between;
     margin: 10px;
+    padding: 20px;
     background-color: $bg-color-secondary;
 }
 
@@ -238,6 +243,16 @@ article {
     width: 50%;
     text-align: center;
     min-height: 140px;
+}
+
+.e {
+    height: $desktop-profile-size;
+    width: $desktop-profile-size;
+}
+
+.r {
+    height: $desktop-profile-size;
+    width: $desktop-profile-size;
 }
 
 .referencwork {
