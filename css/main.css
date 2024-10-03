@@ -128,16 +128,24 @@ h1, h2, h3, h4, .nav {
 .tierbox {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.tierbox > div {
+.tier {
   margin: 10px;
   width: 25%;
   border-radius: 10px;
   background-color: #444B53;
   color: white;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tier ul {
+  list-style: square;
 }
 
 @media screen and (max-width: 880px) {

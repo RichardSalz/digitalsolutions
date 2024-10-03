@@ -177,17 +177,25 @@ article {
 .tierbox {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.tierbox > div {
+.tier {
     margin: 10px;
     width: 25%;
     border-radius: 10px;
     background-color: $bg-color-dark;
     color: $font-color-secondary;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     
+}
+
+.tier ul {
+    list-style: square;
 }
 
 //TIERS MOBILE
