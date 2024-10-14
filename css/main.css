@@ -73,7 +73,7 @@ h1, h2, h3, h4, .nav {
   margin: 10px;
   border-radius: 10px;
   color: white;
-  height: 90vh;
+  height: 75vh;
   background-image: linear-gradient(to bottom, rgba(46, 51, 65, 0.4), rgba(46, 51, 65, 0.5)), url(../assets/images/laptop.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -118,22 +118,26 @@ h1, h2, h3, h4, .nav {
   justify-content: center;
 }
 
-.onetime, .contract {
+.onetime, .contract, .training {
   margin: 10px;
   border-radius: 10px;
   background-color: #C6C9CE;
-  padding: 10px;
+  padding: 30px;
+}
+
+.contract h3 {
+  font-size: 20pt;
 }
 
 .tierbox {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .tier {
   margin: 10px;
-  width: 25%;
+  width: 28%;
   border-radius: 10px;
   background-color: #444B53;
   color: white;
@@ -148,13 +152,28 @@ h1, h2, h3, h4, .nav {
   list-style: square;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1280px) {
+  .tier {
+    width: 30%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1080px) {
   .tierbox {
     flex-direction: column;
     align-items: center;
   }
   .tierbox > div {
     width: 55%;
+  }
+}
+@media screen and (max-width: 880px) {
+  .tierbox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tierbox > div {
+    width: 75%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -166,19 +185,6 @@ h1, h2, h3, h4, .nav {
     width: 85%;
   }
 }
-.aboutcompany {
-  margin: 10px;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  font-size: 16pt;
-}
-
-.aboutcompany > div {
-  width: 55%;
-  text-align: center;
-}
-
 @media screen and (max-width: 880px) {
   .onboarding > div {
     width: 75%;
@@ -199,6 +205,44 @@ h1, h2, h3, h4, .nav {
     width: 95%;
   }
 }
+.module {
+  margin: 10px;
+}
+
+.modules {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.modules > div {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+
+.modules > div > div {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 33%;
+  padding: 7px;
+}
+
+.aboutcompany {
+  margin: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 16pt;
+}
+
+.aboutcompany > div {
+  width: 55%;
+  text-align: center;
+}
+
 .cv {
   display: flex;
   flex-direction: row;
