@@ -127,6 +127,11 @@ h1, h2, h3, h4, .nav {
 
 .contract h3 {
   font-size: 20pt;
+  text-align: center;
+}
+
+.contract a h3 {
+  font-size: 16pt;
 }
 
 .tierbox {
