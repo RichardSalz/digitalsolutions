@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background-color: #F7F7F7;
-  font-family: "Merriweather", serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
-h1, h2, h3, h4, .nav {
+h1, h2, h3, h4, .nav, a {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -73,33 +73,81 @@ h1, h2, h3, h4, .nav {
   margin: 10px;
   border-radius: 10px;
   color: white;
-  height: 75vh;
+  height: 85vh;
   background-image: linear-gradient(to bottom, rgba(46, 51, 65, 0.4), rgba(46, 51, 65, 0.5)), url(../assets/images/laptop.jpg);
-  background-position: center;
+  background-position: 60%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .jumbo > article {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 85vh;
 }
 
+.jumbo h2 {
+  font-size: 28pt;
+}
+
+.jumbo h3 {
+  font-size: 24pt;
+}
+
+.jumboleft {
+  padding-left: 10%;
+}
+
+.jumboright {
+  align-self: flex-end;
+  padding-right: 15%;
+}
+
+@media screen and (max-width: 600px) {
+  .jumboleft {
+    align-self: center;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .jumboright {
+    align-self: center;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .jumbo, .cta > div {
+    display: flex;
+    justify-content: center;
+  }
+  .jumbo h2 {
+    font-size: 28pt;
+  }
+  .jumbo h3 {
+    font-size: 24pt;
+  }
+}
 .cta > div > a {
-  margin: 20px;
+  padding: 5px;
   height: 60px;
   background-color: #2435CD;
   color: white;
-  width: 200px;
+  min-width: 200px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 7px;
   text-decoration: none;
   letter-spacing: 1px;
+  font-size: 16pt;
 }
 
 .onboarding {
-  margin: 10px;
+  margin: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -215,7 +263,7 @@ h1, h2, h3, h4, .nav {
   }
 }
 .module {
-  margin: 10px;
+  margin: 20px;
 }
 
 .modules {
